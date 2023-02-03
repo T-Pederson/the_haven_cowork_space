@@ -17,17 +17,17 @@
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
         </label>
         <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-          <li><a>The Space</a></li>
-          <li><a>Pricing</a></li>
-          <li><a>Contact Us</a></li>
+          <li onClick="document.getElementById('space').scrollIntoView();"><a>The Space</a></li>
+          <li onClick="document.getElementById('pricing').scrollIntoView();"><a>Pricing</a></li>
+          <li onClick="document.getElementById('contact').scrollIntoView();"><a>Contact Us</a></li>
         </ul>
       </div>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-2">
-        <li><a>The Space</a></li>
-        <li><a>Pricing</a></li>
-        <li><a>Contact Us</a></li>
+        <li onClick="document.getElementById('space').scrollIntoView();"><a>The Space</a></li>
+        <li onClick="document.getElementById('pricing').scrollIntoView();"><a>Pricing</a></li>
+        <li onClick="document.getElementById('contact').scrollIntoView();"><a>Contact Us</a></li>
       </ul>
     </div>
     <div class="navbar-end">
@@ -46,7 +46,7 @@
     </div>
   </div>
 
-  <div class="overflow-hidden bg-white py-24 sm:py-32">
+  <div id="space" class="overflow-hidden bg-white py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
         <div class="lg:pr-8 lg:pt-4">
@@ -176,7 +176,7 @@
     </div>
   </div>  
 
-  <div class="divider mb-24"></div>
+  <div id="pricing" class="divider mb-24"></div>
 
   <div class="flex gap-8 justify-center mb-24 flex-col sm:flex-row mx-auto max-w-7xl px-6 lg:px-8">
     <div class="flex justify-center">
@@ -237,7 +237,7 @@
     </div>
   </div>
 
-  <div class="divider"></div>
+  <div id="contact" class="divider"></div>
 
   <div class="bg-white pt-12 pb-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">

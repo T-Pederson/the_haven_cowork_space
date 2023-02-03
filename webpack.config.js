@@ -1,16 +1,16 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
     index: './src/index.js',
-    twElements: './node_modules/dist/js/index.min.js'
+    twElements: './node_modules/tw-elements/dist/js/index.min.js'
   },
   plugins: [
     new HtmlWebpackPlugin({
       hash: true,
       title: 'The Haven Co-Work Space',
       template: './src/index.html',
-      filename: './dist/index.html'
     }),
   ],
   output: {

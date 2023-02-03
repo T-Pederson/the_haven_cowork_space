@@ -1,1 +1,22 @@
 import './build.css';
+import logo from './images/temp_logo.svg';
+import storefront from './images/storefront.jpg';
+import clock from './images/clock.svg';
+import doNotDisturb from './images/do_not_disturb.svg';
+import wifi from './images/wifi.svg';
+import lobby from './images/lobby.jpg';
+import fourPersonSpace from './images/4_person_space.jpg';
+import threePersonSpace from './images/3_person_space.jpg';
+import conferenceRoom from './images/conference_room.jpg';
+import coffeeStation from './images/coffee_station.jpg';
+
+document.getElementById('logo').src = logo;
+document.querySelector('.hero').style.backgroundImage = `url(${storefront})`;
+document.getElementById('clock').src = clock;
+document.getElementById('doNotDisturb').src = doNotDisturb;
+document.getElementById('wifi').src = wifi;
+document.getElementById('lobby').src = lobby;
+document.getElementById('fourPersonSpace').src = fourPersonSpace;
+document.getElementById('threePersonSpace').src = threePersonSpace;
+document.getElementById('conferenceRoom').src = conferenceRoom;
+document.getElementById('coffeeStation').src = coffeeStation;
